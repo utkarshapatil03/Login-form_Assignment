@@ -1,0 +1,148 @@
+/* General styling for the form elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Increased space between form groups */
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555; /* Slightly lighter color for labels */
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #1d993a; /* Highlight border color on focus */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: #19662b;
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+}
+
+#responseMessage {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Styling for checkboxes (Show Password & Remember Me) */
+.form-group-inline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-group-inline label {
+    margin-right: 10px;
+    color: #555;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 8px;
+    accent-color: #28a745; /* Checkbox color */
+    transition: background-color 0.3s ease; /* Smooth checkbox transition */
+}
+
+input[type="checkbox"]:hover {
+    background-color: #e2e2e2; /* Light background color on hover */
+}
+
+input[type="checkbox"]:focus {
+    outline: 2px solid #28a745;
+    outline-offset: 3px;
+}
+
+/* Forgot Password Link */
+#forgotPassword {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+#forgotPassword:hover {
+    color: #0056b3; /* Darker color on hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+        width: 90%;
+    }
+}
