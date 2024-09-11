@@ -1,10 +1,9 @@
-# Login-form_Assignment
-
-## Description
+# Login-form_Assignment: 
 This project is a simple login form built using HTML, CSS, and JavaScript. It includes validation, a show/hide password feature, and a "Remember Me" checkbox.
 
 ## How to Run the Project
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/repository.git
+  git clone https://github.com/utkarshapatil03/Login-form_Assignment.git
+
