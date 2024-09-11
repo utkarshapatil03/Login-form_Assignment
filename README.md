@@ -3,8 +3,10 @@ This project is a simple login form built using HTML, CSS, and JavaScript. It in
 
 ## How to Run the Project
 
-1. Clone the repository:
+Clone the repository:
 
+To clone the repository, use the following command in your terminal:
+```bash
 git clone https://github.com/utkarshapatil03/Login-form_Assignment.git
 
 ## Live Demo Link:
