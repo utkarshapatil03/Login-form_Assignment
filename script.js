@@ -1,4 +1,3 @@
-// Add event listener for form submission
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form from submitting
 
@@ -30,7 +29,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         localStorage.setItem('password', password);
     }
 
-    // Show loading spinner (optional, add your own spinner in HTML if you wish)
+    // Show loading spinner 
     document.getElementById('responseMessage').textContent = 'Logging in...';
 
     // Send API request
@@ -62,7 +61,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     });
 });
 
-// Function to validate email format (updated for username)
+// Function to validate email format 
 function validateUsername(username) {
     // Example: A basic validation, can be more complex based on requirements
     return username.trim() !== '';
@@ -74,7 +73,7 @@ document.getElementById('showPassword').addEventListener('change', function() {
     passwordField.type = this.checked ? 'text' : 'password';
 });
 
-// Forgot Password link functionality (Example)
+// Forgot Password link functionality 
 document.getElementById('forgotPassword').addEventListener('click', function(event) {
     event.preventDefault();
     // You can redirect to a password recovery page or show a modal here
